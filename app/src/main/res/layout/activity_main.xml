@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constant_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/box_one"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/box_one"
+        app:layout_constraintBottom_toBottomOf="@+id/box_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/box_two" />
+
+    <TextView
+        android:id="@+id/box_two"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/box_two"
+        app:layout_constraintStart_toEndOf="@+id/box_one"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_three"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/box_three"
+        app:layout_constraintStart_toEndOf="@+id/box_two"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_four"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/box_four"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_one" />
+
+    <TextView
+        android:id="@+id/box_five"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/box_five"
+        app:layout_constraintStart_toEndOf="@+id/box_four"
+        app:layout_constraintTop_toBottomOf="@+id/box_two" />
+
+    <Button
+        android:id="@+id/red_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@color/red"
+        android:text="@string/red_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+        app:layout_constraintEnd_toStartOf="@+id/yellow_button"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/green_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/green"
+        android:text="@string/green_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/yellow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/yellow"
+        android:text="@string/yellow_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/green_button"
+        app:layout_constraintStart_toEndOf="@+id/red_button" />
+
+    <TextView
+        android:id="@+id/box_six"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/box_six"
+        app:layout_constraintStart_toEndOf="@+id/box_five"
+        app:layout_constraintTop_toBottomOf="@+id/box_three" />
+
+    <TextView
+        android:id="@+id/box_seven"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/box_seven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_four" />
+
+    <TextView
+        android:id="@+id/box_8"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/box_8"
+        app:layout_constraintStart_toEndOf="@+id/box_seven"
+        app:layout_constraintTop_toBottomOf="@+id/box_five" />
+
+    <TextView
+        android:id="@+id/box_9"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/box_9"
+        app:layout_constraintStart_toEndOf="@+id/box_8"
+        app:layout_constraintTop_toBottomOf="@+id/box_six" />
+
+    <TextView
+        android:id="@+id/box_10"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/box_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_seven" />
+
+    <TextView
+        android:id="@+id/box_11"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/box_11"
+        app:layout_constraintStart_toEndOf="@+id/box_10"
+        app:layout_constraintTop_toBottomOf="@+id/box_8" />
+
+    <TextView
+        android:id="@+id/box_12"
+        style="@style/BoxStyle"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/box_12"
+        app:layout_constraintStart_toEndOf="@+id/box_11"
+        app:layout_constraintTop_toBottomOf="@+id/box_9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
